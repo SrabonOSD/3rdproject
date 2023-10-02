@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css custom link -->
+    <link rel="stylesheet" href="style.css">
+    <title>loging page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form signup">
+            <h2>Sign up</h2>
+            <!-- 1st div -->
+            <div class="inputBox">
+                <input type="text" required="required">
+                <i class="fa-regular fa-user"></i>
+                <span>username</span>
+            </div>
+            <!-- 2nd div -->
+            <div class="inputBox">
+                <input type="text" required="required">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Email address</span>
+            </div>
+            <!-- 3rd div -->
+            <div class="inputBox">
+                <input type="password" required="required">
+                <i class="fa-sharp fa-solid fa-key"></i>
+                <span>Create password</span>
+            </div>
+            <!-- 4th div -->
+            <div class="inputBox">
+                <input type="password" required="required">
+                <i class="fa-solid fa-unlock"></i>
+                <span>confirm password</span>
+            </div>
+            <!-- 5th div -->
+            <div class="inputBox">
+                <input type="submit" value="creat account">
+            </div>
+            <p>Already a name ? <a href="#" class="log in">logIn</a></p>
+        </div>
+
+        <!-- login page -->
+        
+        <div class="form signin">
+            <h2>Sign up</h2>
+            <!-- 1st div -->
+            <div class="inputBox">
+                <input type="text" required="required">
+                <i class="fa-regular fa-user"></i>
+                <span>username</span>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required">
+                <i class="fa-sharp fa-solid fa-key"></i>
+                <span>Creat password</span>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="logIn">
+            </div>
+            <p>Not regested ? <a href="#" class="creat">Creat an account</a></p>
+        </div>
+    </div>
+    <h3>Make by:Asm Srabon Roy</h3>
+    <script>
+        let login=document.querySelector('.login');
+        let creat=document.querySelector('.creat');
+        let container=document.querySelector('.container');
+
+        login.onclick = function(){
+            container.classList.add('signinForm');
+        }
+        creat.onclick = function(){
+            container.classList.remove('signinForm');
+        }
+    </script>
+</body>
+</html>
